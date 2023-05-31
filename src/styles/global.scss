@@ -1,0 +1,18 @@
+body {
+	--blue0: #7070EB;
+	--blue1: #5959de;
+	--blue2: #3c3cc8;
+	--blue3: #373777;
+	--blue4: #242433;
+
+	margin: 0;
+
+	a{
+		text-decoration: none;
+		color: var(--blue0);
+
+		&:hover{
+			color: var(--blue1);
+		}
+	}
+}
