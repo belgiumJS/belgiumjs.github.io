@@ -1,0 +1,21 @@
+.header {
+	display: flex;
+	justify-content: space-between;
+	align-items: center;
+	padding: 20px;
+	border-bottom: 1px solid #ccc;
+
+	.links {
+		display: flex;
+		gap: 5px;
+		align-items: center;
+
+		a {
+			text-decoration: none;
+
+			&:hover {
+				text-decoration: underline;
+			}
+		}
+	}
+}

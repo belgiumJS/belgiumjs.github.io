@@ -1,0 +1,8 @@
+{
+	"singleQuote": true,
+	"semi": true,
+	"useTabs": true,
+	"jsxSingleQuote": false,
+	"printWidth": 80,
+	"tabWidth": 2
+}
