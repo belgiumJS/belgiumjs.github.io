@@ -1,4 +1,5 @@
 # Contribution Guidelines
+
 Thank you for your interest in contributing to the Node.js Website. Before you proceed, briefly go through the following:
 
 ## Introduction

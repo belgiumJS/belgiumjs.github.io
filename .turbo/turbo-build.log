@@ -14,16 +14,16 @@
 - info Finalizing page optimization...
 
 Route (app)                                Size     First Load JS
-┌ ○ /                                      221 B          77.4 kB
-├ ○ /about                                 215 B          77.4 kB
-├ ○ /blog                                  227 B          83.1 kB
-├ ○ /events                                215 B          77.4 kB
+┌ ○ /                                      221 B          77.5 kB
+├ ○ /about                                 218 B          77.5 kB
+├ ○ /blog                                  218 B          77.5 kB
+├ ○ /events                                217 B          77.4 kB
 └ ○ /icon.svg                              0 B                0 B
 + First Load JS shared by all              77.2 kB
   ├ chunks/2443530c-d4a6bd7fc7f21e3c.js    50.5 kB
-  ├ chunks/488-b4b91b085767513b.js         24.7 kB
+  ├ chunks/488-4b4f25e9948f085c.js         24.8 kB
   ├ chunks/main-app-4ceb50f538e0bd60.js    215 B
-  └ chunks/webpack-dff9f6925902a04a.js     1.71 kB
+  └ chunks/webpack-eb030e47bb3ca609.js     1.71 kB
 
 Route (pages)                              Size     First Load JS
 ─ ○ /404                                   181 B          74.8 kB
@@ -31,7 +31,7 @@ Route (pages)                              Size     First Load JS
   ├ chunks/framework-8883d1e9be70c3da.js   45.1 kB
   ├ chunks/main-ccb8dfc25081ecd6.js        27.6 kB
   ├ chunks/pages/_app-b555d5e1eab47959.js  195 B
-  └ chunks/webpack-dff9f6925902a04a.js     1.71 kB
+  └ chunks/webpack-eb030e47bb3ca609.js     1.71 kB
 
 ○  (Static)  automatically rendered as static HTML (uses no initial props)
 
