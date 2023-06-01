@@ -1,14 +1,22 @@
 import styles from './index.module.scss';
-import type { FC, ReactNode } from 'react';
+import { compileMDX } from 'next-mdx-remote/rsc';
 
 type Props = {
-    children: ReactNode
+	source: string;
 };
 
-const Article: FC<Props> = ({ children }) => (
-    <article className={styles.articleLayout}>
-        {children}
-    </article>
-);
+const Article = async ({ source }: Props) => {
+	const { content, frontmatter } = await compileMDX<{ title: string }>({
+		source,
+		options: { parseFrontmatter: true },
+	}).then((res) => res);
+
+	return (
+		<article className={styles.articleLayout}>
+			<h1>{frontmatter.title}</h1>
+			<div>{content}</div>
+		</article>
+	);
+};
 
 export default Article;

@@ -1,5 +1,5 @@
 body {
-	--blue0: #7070EB;
+	--blue0: #7070eb;
 	--blue1: #5959de;
 	--blue2: #3c3cc8;
 	--blue3: #373777;
@@ -7,11 +7,11 @@ body {
 
 	margin: 0;
 
-	a{
+	a {
 		text-decoration: none;
 		color: var(--blue0);
 
-		&:hover{
+		&:hover {
 			color: var(--blue1);
 		}
 	}
