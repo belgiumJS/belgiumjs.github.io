@@ -9,12 +9,23 @@
 		display: flex;
 		gap: 5px;
 		align-items: center;
+		justify-content: center;
 
 		a {
 			text-decoration: none;
 
 			&:hover {
 				text-decoration: underline;
+			}
+		}
+
+		svg {
+			width: 25px;
+			height: 25px;
+
+			transition: all 0.3s ease-in-out;
+			&:hover {
+				transform: scale(1.2);
 			}
 		}
 	}

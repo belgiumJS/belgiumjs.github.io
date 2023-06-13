@@ -1,5 +1,6 @@
 import Link from 'next/link';
 import Image from 'next/image';
+import { FaGithub } from 'react-icons/fa';
 import style from './index.module.scss';
 import type { FC } from 'react';
 
@@ -21,6 +22,7 @@ const Header: FC<Props> = ({ className }) => (
 			<Link href="/about">About</Link>
 			<Link href="/events">Events</Link>
 			<Link href="/blog">Blog</Link>
+			<Link href="https://github.com/belgiumJS"><FaGithub /></Link>
 		</div>
 	</header>
 );
