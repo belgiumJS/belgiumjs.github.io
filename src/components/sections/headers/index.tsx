@@ -22,7 +22,9 @@ const Header: FC<Props> = ({ className }) => (
 			<Link href="/about">About</Link>
 			<Link href="/events">Events</Link>
 			<Link href="/blog">Blog</Link>
-			<Link href="https://github.com/belgiumJS"><FaGithub /></Link>
+			<Link href="https://github.com/belgiumJS">
+				<FaGithub />
+			</Link>
 		</div>
 	</header>
 );
