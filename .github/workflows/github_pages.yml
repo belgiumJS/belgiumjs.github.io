@@ -61,6 +61,9 @@ jobs:
           key: build-${{ hashFiles('**/package-lock.json') }}-${{ hashFiles('node_modules/.cache') }}
           enableCrossOsArchive: true
 
+      - name: Copy index.html
+        run: cp ./out/en.html ./out/index.html
+
       - name: Upload Artifact
         uses: actions/upload-pages-artifact@v1
         with:
