@@ -18,15 +18,15 @@
 				text-decoration: underline;
 			}
 		}
+	}
+	svg {
+		width: 25px;
+		height: 25px;
+		color: var(--blue0);
 
-		svg {
-			width: 25px;
-			height: 25px;
-
-			transition: all 0.3s ease-in-out;
-			&:hover {
-				transform: scale(1.2);
-			}
+		transition: all 0.3s ease-in-out;
+		&:hover {
+			transform: scale(1.2);
 		}
 	}
 }

@@ -1,6 +1,6 @@
 import type { config } from '@/types/i18n';
 
-const i18nconfig: config = [
+const i18nConfig: config = [
 	{
 		locale: 'en',
 		label: 'English',
@@ -24,4 +24,4 @@ const i18nconfig: config = [
 	},
 ];
 
-export default i18nconfig;
+export default i18nConfig;

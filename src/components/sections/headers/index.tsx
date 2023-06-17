@@ -4,6 +4,7 @@ import { FaGithub } from 'react-icons/fa';
 import LocalizedLink from '@/components/localizedLink';
 import style from './index.module.scss';
 import type { FC } from 'react';
+import LanguageSelector from '@/components/common/LanguageSelector';
 
 type Props = {
 	className: string;
@@ -23,6 +24,7 @@ const Header: FC<Props> = ({ className }) => (
 			<LocalizedLink href="/about">About</LocalizedLink>
 			<LocalizedLink href="/events">Events</LocalizedLink>
 			<LocalizedLink href="/blog">Blog</LocalizedLink>
+			<LanguageSelector />
 			<Link href="https://github.com/belgiumJS">
 				<FaGithub />
 			</Link>
