@@ -14,7 +14,7 @@ const Header: FC<Props> = ({ className }) => (
 	<header className={`${style.header} ${className}`}>
 		<LocalizedLink href="/">
 			<Image
-				src="static/logo/logo-color-text-black.svg"
+				src="/static/logo/logo-color-text-black.svg"
 				alt="logo"
 				height={50}
 				width={200}
