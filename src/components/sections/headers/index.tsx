@@ -1,8 +1,10 @@
 import Link from 'next/link';
 import Image from 'next/image';
 import { FaGithub } from 'react-icons/fa';
+import LocalizedLink from '@/components/localizedLink';
 import style from './index.module.scss';
 import type { FC } from 'react';
+import LanguageSelector from '@/components/common/LanguageSelector';
 
 type Props = {
 	className: string;
@@ -10,18 +12,19 @@ type Props = {
 
 const Header: FC<Props> = ({ className }) => (
 	<header className={`${style.header} ${className}`}>
-		<Link href="/">
+		<LocalizedLink href="/">
 			<Image
 				src="static/logo/logo-color-text-black.svg"
 				alt="logo"
 				height={50}
 				width={200}
 			/>
-		</Link>
+		</LocalizedLink>
 		<div className={style.links}>
-			<Link href="/about">About</Link>
-			<Link href="/events">Events</Link>
-			<Link href="/blog">Blog</Link>
+			<LocalizedLink href="/about">About</LocalizedLink>
+			<LocalizedLink href="/events">Events</LocalizedLink>
+			<LocalizedLink href="/blog">Blog</LocalizedLink>
+			<LanguageSelector />
 			<Link href="https://github.com/belgiumJS">
 				<FaGithub />
 			</Link>
