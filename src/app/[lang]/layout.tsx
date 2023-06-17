@@ -3,13 +3,15 @@ import font from '@/utils/fonts';
 import Footer from '@/components/sections/footer';
 import i18nconfig from '@/utils/i18n.config';
 import styles from '@/styles/layout.module.scss';
+import getMessage from '@/lib/getMessage';
 import type { FC, ReactNode } from 'react';
 import '@/styles/global.scss';
+import LocalProvider from '@/providers/localProvider';
 
-const metadata = {
-	title: 'BelgiumJS',
-	description: 'Belgian javascript development community',
-};
+//const metadata = {
+//	title: 'BelgiumJS',
+//	description: 'Belgian javascript development community',
+//};
 
 type Props = {
 	children: ReactNode;
@@ -24,15 +26,22 @@ export async function generateStaticParams() {
 	}));
 }
 
-const Layout: FC<Props> = ({ children, params }) => (
-	<html lang={params.lang}>
-		<body className={`${font.className} ${styles.layout}`}>
-			<Header className={styles.header} />
-			<main className={styles.main}>{children}</main>
-			<Footer className={styles.footer} />
-		</body>
-	</html>
-);
+const Layout: FC<Props> = ({ children, params }) => {
+	const messages = () => ({
+		...getMessage('en'),
+		...getMessage(params.lang),
+	});
 
-export { metadata };
+	return <html lang={params.lang}>
+		<body className={`${font.className} ${styles.layout}`}>
+			<LocalProvider lang={params.lang} messages={messages()}>
+				<Header className={styles.header} />
+				<main className={styles.main}>{children}</main>
+				<Footer className={styles.footer} />
+			</LocalProvider>
+		</body>
+	</html>;
+};
+
+//export { metadata };
 export default Layout;
