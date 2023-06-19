@@ -1,3 +1,7 @@
 {
-	"components.home.hero.description": "Communauté belge de développement javascript"
+	"components.home.hero.description": "Communauté belge de développement javascript",
+	"components.sections.footer.text": "Discussions sur le projet",
+	"components.sections.header.about": "À propos",
+	"components.sections.header.events": "Événements",
+	"components.sections.header.blog": "Blog"
 }
