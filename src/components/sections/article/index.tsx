@@ -1,5 +1,5 @@
-import styles from './index.module.scss';
 import { compileMDX } from 'next-mdx-remote/rsc';
+import styles from './index.module.scss';
 
 type Props = {
 	source: string;
