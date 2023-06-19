@@ -1,5 +1,6 @@
 ---
 title: Blog
+description: Blog de BelgiumJS
 ---
 
 Page en cours d'élaboration.

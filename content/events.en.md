@@ -1,5 +1,6 @@
 ---
 title: Events
+description: Events of BelgiumJS
 ---
 
 We want to provide some fun events.

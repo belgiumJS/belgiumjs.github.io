@@ -1,8 +1,9 @@
 ---
 title: À propos
+description: À propos de BelgiumJS. Comment aider à lancer le projet.
 ---
 
-BelguimJS est une organisation dédiée au rassemblement des développeurs javascript open source.
+BelgiumJS est une organisation dédiée au rassemblement des développeurs javascript open source.
 
 ## Comment aider à lancer le projet
 

@@ -14,13 +14,14 @@ const generateMetadata = async ({ params }: params): Promise<Metadata> => {
 		};
 	}
 
-	const { frontmatter } = await compileMDX<{ title: string }>({
+	const { frontmatter } = await compileMDX<{ title: string, description: string }>({
 		source: rawSource,
 		options: { parseFrontmatter: true },
 	});
 
 	return {
 		title: frontmatter.title,
+		description: frontmatter.description,
 	};
 };
 

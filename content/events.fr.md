@@ -1,5 +1,6 @@
 ---
-title: Evénements
+title: Événements
+description: Événements de BelgiumJS
 ---
 
 Nous voulons organiser des événements amusants.

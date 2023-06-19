@@ -1,5 +1,6 @@
 ---
 title: Blog
+description: Blog of BelgiumJS
 ---
 
 Page working in progress.
