@@ -7,7 +7,9 @@ const Hero: FC = () => (
 	<div className={styles.hero}>
 		<div className={styles.content}>
 			<h1>BelgiumJS</h1>
-			<p><FormattedMessage id="components.home.hero.description"/></p>
+			<p>
+				<FormattedMessage id="components.home.hero.description" />
+			</p>
 		</div>
 	</div>
 );

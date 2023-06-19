@@ -11,7 +11,7 @@ import '@/styles/global.scss';
 const metadata = {
 	title: {
 		default: 'BelgiumJS',
-		template:'%s | BelgiumJS'
+		template: '%s | BelgiumJS',
 	},
 	description: 'Belgian javascript development community',
 };
@@ -35,15 +35,17 @@ const Layout: FC<Props> = ({ children, params }) => {
 		...getMessage(params.lang),
 	});
 
-	return <html lang={params.lang}>
-		<body className={`${font.className} ${styles.layout}`}>
-			<LocalProvider lang={params.lang} messages={messages()}>
-				<Header className={styles.header} />
-				<main className={styles.main}>{children}</main>
-				<Footer className={styles.footer} />
-			</LocalProvider>
-		</body>
-	</html>;
+	return (
+		<html lang={params.lang}>
+			<body className={`${font.className} ${styles.layout}`}>
+				<LocalProvider lang={params.lang} messages={messages()}>
+					<Header className={styles.header} />
+					<main className={styles.main}>{children}</main>
+					<Footer className={styles.footer} />
+				</LocalProvider>
+			</body>
+		</html>
+	);
 };
 
 export { metadata };

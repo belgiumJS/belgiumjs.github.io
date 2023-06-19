@@ -1,7 +1,7 @@
 {
-    "components.home.hero.description": "Belgian javascript development community",
-    "components.sections.footer.text": "Discussions about the project",
-    "components.sections.header.about": "About",
-    "components.sections.header.events": "Events",
-    "components.sections.header.blog": "Blog"
+	"components.home.hero.description": "Belgian javascript development community",
+	"components.sections.footer.text": "Discussions about the project",
+	"components.sections.header.about": "About",
+	"components.sections.header.events": "Events",
+	"components.sections.header.blog": "Blog"
 }

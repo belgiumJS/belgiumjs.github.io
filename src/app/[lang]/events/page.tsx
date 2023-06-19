@@ -5,8 +5,8 @@ import type { FC } from 'react';
 import type { Metadata } from 'next';
 import type { params } from '@/types/i18n';
 
-const generateMetadata = async ({ params }:params): Promise<Metadata> => {
-    const rawSource = getContentBySlug('events', params.lang);
+const generateMetadata = async ({ params }: params): Promise<Metadata> => {
+	const rawSource = getContentBySlug('events', params.lang);
 
 	if (!rawSource) {
 		return {
@@ -14,14 +14,14 @@ const generateMetadata = async ({ params }:params): Promise<Metadata> => {
 		};
 	}
 
-    const { frontmatter } = await compileMDX<{ title: string }>({
-        source: rawSource,
-        options: { parseFrontmatter: true },
-      });
+	const { frontmatter } = await compileMDX<{ title: string }>({
+		source: rawSource,
+		options: { parseFrontmatter: true },
+	});
 
-    return{
-        title: frontmatter.title
-    };
+	return {
+		title: frontmatter.title,
+	};
 };
 
 const Page: FC<params> = ({ params }) => {

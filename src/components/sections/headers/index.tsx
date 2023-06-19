@@ -23,9 +23,15 @@ const Header: FC<Props> = ({ className }) => (
 			/>
 		</LocalizedLink>
 		<div className={style.links}>
-			<LocalizedLink href="/about"><FormattedMessage id="components.sections.header.about"/></LocalizedLink>
-			<LocalizedLink href="/events"><FormattedMessage id="components.sections.header.events"/></LocalizedLink>
-			<LocalizedLink href="/blog"><FormattedMessage id="components.sections.header.blog"/></LocalizedLink>
+			<LocalizedLink href="/about">
+				<FormattedMessage id="components.sections.header.about" />
+			</LocalizedLink>
+			<LocalizedLink href="/events">
+				<FormattedMessage id="components.sections.header.events" />
+			</LocalizedLink>
+			<LocalizedLink href="/blog">
+				<FormattedMessage id="components.sections.header.blog" />
+			</LocalizedLink>
 			<LanguageSelector />
 			<Link href="https://github.com/belgiumJS">
 				<FaGithub />
