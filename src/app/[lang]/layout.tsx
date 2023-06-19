@@ -4,14 +4,17 @@ import Footer from '@/components/sections/footer';
 import i18nconfig from '@/utils/i18n.config';
 import styles from '@/styles/layout.module.scss';
 import getMessage from '@/lib/getMessage';
+import LocalProvider from '@/providers/localProvider';
 import type { FC, ReactNode } from 'react';
 import '@/styles/global.scss';
-import LocalProvider from '@/providers/localProvider';
 
-//const metadata = {
-//	title: 'BelgiumJS',
-//	description: 'Belgian javascript development community',
-//};
+const metadata = {
+	title: {
+		default: 'BelgiumJS',
+		template:'%s | BelgiumJS'
+	},
+	description: 'Belgian javascript development community',
+};
 
 type Props = {
 	children: ReactNode;
@@ -43,5 +46,5 @@ const Layout: FC<Props> = ({ children, params }) => {
 	</html>;
 };
 
-//export { metadata };
+export { metadata };
 export default Layout;
