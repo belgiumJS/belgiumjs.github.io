@@ -1,42 +1,35 @@
-import Article from '@/components/sections/article';
-import getContentBySlug from '@/lib/getcontent';
-import { compileMDX } from 'next-mdx-remote/rsc';
+import { getAllSlugs } from '@/lib/getcontent';
+import BlogCard from '@/components/blog/blogCard';
+import styles from '@/styles/app/about.module.scss';
+import Message from '@/components/blog/message';
 import type { FC } from 'react';
-import type { Metadata } from 'next';
-import type { params } from '@/types/i18n';
+import type { params } from '@/types/params';
 
-const generateMetadata = async ({ params }: params): Promise<Metadata> => {
-	const rawSource = getContentBySlug('blog', params.lang);
+const slugRegex = /(?<slug>.*)\.(?<lang>.*)/;
 
-	if (!rawSource) {
-		return {
-			title: '404',
-		};
-	}
+const Page: FC<params> = async ({ params }) => {
+	const allSlugs = getAllSlugs(params.lang, 'blog');
 
-	const { frontmatter } = await compileMDX<{
-		title: string;
-		description: string;
-	}>({
-		source: rawSource,
-		options: { parseFrontmatter: true },
-	});
-
-	return {
-		title: frontmatter.title,
-		description: frontmatter.description,
-	};
+	return (
+		<div className={styles.pageContainer}>
+			<h1>Blog</h1>
+			<div className={styles.container}>
+				{allSlugs.length === 0 ? (
+					<Message />
+				) : (
+					allSlugs.map((slug) => (
+						<BlogCard
+							key={slug}
+							/* @ts-ignore */
+							slug={slugRegex.exec(slug).groups.slug}
+							/* @ts-ignore */
+							lang={slugRegex.exec(slug).groups.lang}
+						/>
+					))
+				)}
+			</div>
+		</div>
+	);
 };
 
-const Page: FC<params> = ({ params }) => {
-	const content = getContentBySlug('blog', params.lang);
-
-	if (!content) {
-		return <div>404</div>;
-	}
-
-	return <Article source={content} />;
-};
-
-export { generateMetadata };
 export default Page;

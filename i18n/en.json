@@ -3,5 +3,6 @@
 	"components.sections.footer.text": "Discussions about the project",
 	"components.sections.header.about": "About",
 	"components.sections.header.events": "Events",
-	"components.sections.header.blog": "Blog"
+	"components.sections.header.blog": "Blog",
+	"app.blog.noPosts": "No posts yet"
 }

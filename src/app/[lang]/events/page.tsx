@@ -1,9 +1,9 @@
-import Article from '@/components/sections/article';
+import Article from '@/components/layout/article';
 import getContentBySlug from '@/lib/getcontent';
 import { compileMDX } from 'next-mdx-remote/rsc';
 import type { FC } from 'react';
 import type { Metadata } from 'next';
-import type { params } from '@/types/i18n';
+import type { params } from '@/types/params';
 
 const generateMetadata = async ({ params }: params): Promise<Metadata> => {
 	const rawSource = getContentBySlug('events', params.lang);
