@@ -1,18 +1,16 @@
 body {
-	--blue0: #7070eb;
-	--blue1: #5959de;
-	--blue2: #3c3cc8;
-	--blue3: #373777;
-	--blue4: #242433;
+	--red: #C8102E;
+	--red1: #b40e29;
+	--yellow: #FFCD00;
 
 	margin: 0;
 
 	a {
 		text-decoration: none;
-		color: var(--blue0);
+		color: var(--red);
 
 		&:hover {
-			color: var(--blue1);
+			color: var(--red1);
 		}
 	}
 }
