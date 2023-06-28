@@ -5,10 +5,4 @@ type config = {
 	default?: boolean;
 }[];
 
-type params = {
-	params: {
-		lang: string;
-	};
-};
-
-export type { config, params };
+export type { config };
