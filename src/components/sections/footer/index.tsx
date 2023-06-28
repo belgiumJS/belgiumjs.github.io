@@ -2,7 +2,7 @@
 import Link from 'next/link';
 import styles from './index.module.scss';
 import type { FC } from 'react';
-import { FormattedMessage } from 'react-intl';
+import LocalizedMessage from '@/components/i18n/localizedMessage';
 
 type Props = {
 	className: string;
@@ -11,7 +11,7 @@ type Props = {
 const Footer: FC<Props> = ({ className }) => (
 	<footer className={`${styles.footer} ${className}`}>
 		<Link href="https://github.com/belgiumJS/discussions/discussions">
-			<FormattedMessage id="components.sections.footer.text" />
+			<LocalizedMessage id="components.sections.footer.text" />
 		</Link>
 	</footer>
 );
