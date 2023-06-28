@@ -1,4 +1,5 @@
 import { compileMDX } from 'next-mdx-remote/rsc';
+import LocalizedDate from '@/components/i18n/localizedDate';
 import styles from './index.module.scss';
 
 type Props = {
@@ -19,11 +20,12 @@ const Article = async ({ source }: Props) => {
 		<article className={styles.articleLayout}>
 			<h1>{frontmatter.title}</h1>
 			<p>{frontmatter.desciption}</p>
-			{frontmatter.date && (
-				<time dateTime={frontmatter.date.toISOString()}>
-					{frontmatter.date.toLocaleDateString()}
-				</time>
-			)}
+			<LocalizedDate
+				value={frontmatter.date}
+				year="numeric"
+				month="long"
+				day="numeric"
+			/>
 			<div>{content}</div>
 		</article>
 	);

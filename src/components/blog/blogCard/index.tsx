@@ -3,6 +3,7 @@ import getContentBySlug from '@/lib/getcontent';
 import { compileMDX } from 'next-mdx-remote/rsc';
 import styles from './index.module.scss';
 import type { FC } from 'react';
+import LocalizedMessage from '@/components/i18n/localizedMessage';
 
 type Props = {
 	slug: string;
@@ -30,14 +31,18 @@ const BlogCard: FC<Props> = async ({ slug, lang }) => {
 					<img src={frontmatter.thumbnail} alt={frontmatter.title} />
 					<div className={styles.content}>
 						<p>{frontmatter.description}</p>
-						<Link href={`/${lang}/blog/${slug}`}>Read more</Link>
+						<Link href={`/${lang}/blog/${slug}`}>
+							<LocalizedMessage id="components.blog.blogCard.readMore" />
+						</Link>
 					</div>
 				</>
 			) : (
 				<div className={styles.content}>
 					<h2>{frontmatter.title}</h2>
 					<p>{frontmatter.description}</p>
-					<Link href={`/${lang}/blog/${slug}`}>Read more</Link>
+					<Link href={`/${lang}/blog/${slug}`}>
+						<LocalizedMessage id="components.blog.blogCard.readMore" />
+					</Link>
 				</div>
 			)}
 		</div>
