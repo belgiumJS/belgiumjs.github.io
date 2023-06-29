@@ -1,11 +1,19 @@
 ---
 title: À propos
-description: À propos de BelgiumJS. Comment aider à lancer le projet.
+description: À propos de BelgiumJS. BelgiumJS est une organisation dédiée au rassemblement des développeurs javascript open source.
 ---
 
-BelgiumJS est une organisation dédiée au rassemblement des développeurs javascript open source.
+## Qui sommes-nous ?
 
-## Comment aider à lancer le projet
+Nous sommes un groupe de développeurs passionnés par le javascript et qui aimons partager nos connaissances avec les autres. Nous allons organisons des événements. Si vous êtes intéressés, vous pouvez allez lire [ceci](events)
 
-- Aide sur le site web, le site web est un endroit stratégique pour rassembler les gens. Il est donc important d'avoir le plus d'informations possibles sur celui-ci.
-- Aide à l'organisation, Cela signifie que vous pouvez avoir votre mot à dire sur la façon dont le projet sera gouverné. Vous pouvez également participer à la rédaction du code de conduite du COC ou des lignes directrices en matière de contribution (contribution guideline).
+## Comment nous contacter ?
+
+- Via notre [email](mailto:belgiumjs@gmail.com)
+- Via [github](https://github.com/orgs/belgiumJS/discussions) grâce aux discussions
+
+## Comment nous aider ?
+
+- En participant à nos événements
+- En nous aidant à organiser des événements
+- En nous aidant à trouver des sponsors

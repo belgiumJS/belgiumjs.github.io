@@ -3,5 +3,8 @@
 	"components.sections.footer.text": "Discussions sur le projet",
 	"components.sections.header.about": "À propos",
 	"components.sections.header.events": "Événements",
-	"components.sections.header.blog": "Blog"
+	"components.sections.header.blog": "Blog",
+	"app.blog.title": "Blog",
+	"app.blog.noPosts": "Aucun message pour l'instant",
+	"components.layout.blogArticle.backToBlog": "Retour au blog"
 }
