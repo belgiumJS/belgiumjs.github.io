@@ -6,14 +6,20 @@ type Props = {
 };
 
 const Article = async ({ source }: Props) => {
-	const { content, frontmatter } = await compileMDX<{ title: string }>({
+	const { content, frontmatter } = await compileMDX<{
+		title: string;
+		description: string;
+	}>({
 		source,
 		options: { parseFrontmatter: true },
 	}).then((res) => res);
 
 	return (
 		<article className={styles.articleLayout}>
-			<h1>{frontmatter.title}</h1>
+			<div className={styles.header}>
+				<h1>{frontmatter.title}</h1>
+				<p>{frontmatter.description}</p>
+			</div>
 			<div>{content}</div>
 		</article>
 	);

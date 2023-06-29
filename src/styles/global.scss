@@ -1,7 +1,25 @@
 body {
 	--red: #c8102e;
-	--red1: #b40e29;
+	--red1: #f4cfd5;
+	--red2: #e48897;
+	--red3: #d9586d;
+	--red4: #8c0b20;
+	--red5: #640817;
+	--red6: #280309;
 	--yellow: #ffcd00;
+	--yellow1: #fff5cc;
+	--yellow2: #ffe680;
+	--yellow3: #ffdc4d;
+	--yellow4: #b39000;
+	--yellow5: #806700;
+	--yellow6: #332900;
+	--black: #2d2926;
+	--black1: #ffffff;
+	--black2: #c0bfbe;
+	--black3: #6c6967;
+	--black4: #1f1d1b;
+	--black5: #0d0c0b;
+	--black6: #000000;
 
 	margin: 0;
 
@@ -10,7 +28,7 @@ body {
 		color: var(--red);
 
 		&:hover {
-			color: var(--red1);
+			color: var(--red5);
 		}
 	}
 }

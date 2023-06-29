@@ -1,4 +1,13 @@
 .articleLayout {
 	width: 50%;
 	margin: 0 auto;
+
+	.header {
+		padding-top: 1rem;
+		margin-bottom: 2rem;
+	}
+
+	@media (max-width: 768px) {
+		width: 95%;
+	}
 }
