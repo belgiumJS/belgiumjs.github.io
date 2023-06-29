@@ -9,6 +9,7 @@ import type { FC, ReactNode } from 'react';
 import '@/styles/global.scss';
 
 const metadata = {
+	metadataBase: new URL('https://belgiumjs.github.io/'),
 	title: {
 		default: 'BelgiumJS',
 		template: '%s | BelgiumJS',
