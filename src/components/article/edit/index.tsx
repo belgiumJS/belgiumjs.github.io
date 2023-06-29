@@ -7,10 +7,11 @@ const BASE_EditURL =
 
 type Props = {
 	path: string;
+	lang: string;
 };
 
-const Edit: FC<Props> = ({ path }) => (
-	<Link href={`${BASE_EditURL}/${path}.md`} passHref>
+const Edit: FC<Props> = ({ path, lang }) => (
+	<Link href={`${BASE_EditURL}/${path}.${lang}.md`} passHref>
 		Edit this page <BsFillPencilFill />
 	</Link>
 );

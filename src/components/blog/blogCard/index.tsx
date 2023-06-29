@@ -11,13 +11,7 @@ type Props = {
 	thumbnail?: string;
 };
 
-const BlogCard: FC<Props> = async ({
-	slug,
-	lang,
-	title,
-	thumbnail,
-	description,
-}) => (
+const BlogCard: FC<Props> = ({ slug, lang, title, thumbnail, description }) => (
 	<div className={styles.blogCard}>
 		{thumbnail ? (
 			<>

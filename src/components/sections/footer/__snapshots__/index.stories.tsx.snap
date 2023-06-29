@@ -1,0 +1,11 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`sections/footer Default smoke-test 1`] = `
+<div class="open-sans-normal">
+  <footer class="footer_footer__W6jt8 undefined">
+    <a href="https://github.com/belgiumJS/discussions/discussions">
+      Discussions about the project
+    </a>
+  </footer>
+</div>
+`;

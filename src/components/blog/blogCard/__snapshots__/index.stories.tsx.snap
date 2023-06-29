@@ -1,0 +1,36 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`blog/blogCard Default smoke-test 1`] = `
+<div class="open-sans-normal">
+  <div class="blogCard_blogCard__7S3kX">
+    <div class="blogCard_content__g11VK">
+      <h2>
+        Test
+      </h2>
+      <p>
+        Test
+      </p>
+    </div>
+    <a class="blogCard_readMore__jwiad"
+       href="/en/blog/test"
+    >
+      Read more
+    </a>
+  </div>
+</div>
+`;
+
+exports[`blog/blogCard WithThumbnail smoke-test 1`] = `
+<div class="open-sans-normal">
+  <div class="blogCard_blogCard__7S3kX">
+    <img src="/static/images/test.jpg"
+         alt="Test"
+    >
+    <a class="blogCard_readMore__jwiad"
+       href="/en/blog/test"
+    >
+      Read more
+    </a>
+  </div>
+</div>
+`;

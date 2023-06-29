@@ -1,14 +1,25 @@
 {
-	"extends": "next/core-web-vitals",
+	"extends": ["next/core-web-vitals", "plugin:storybook/recommended"],
 	"rules": {
 		"@next/next/no-img-element": "off",
 		"no-console": "error",
 		"quotes": ["error", "single"],
-		"no-multiple-empty-lines": ["error", { "max": 1, "maxEOF": 0 }],
+		"no-multiple-empty-lines": [
+			"error",
+			{
+				"max": 1,
+				"maxEOF": 0
+			}
+		],
 		"eol-last": ["error", "always"],
 		"no-trailing-spaces": "error",
 		"semi": ["error", "always"],
-		"no-unused-vars": ["error", { "argsIgnorePattern": "^_" }],
+		"no-unused-vars": [
+			"error",
+			{
+				"argsIgnorePattern": "^_"
+			}
+		],
 		"react/react-in-jsx-scope": "off"
 	}
 }

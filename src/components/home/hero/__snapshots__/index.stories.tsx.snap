@@ -1,0 +1,16 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`home/hero Default smoke-test 1`] = `
+<div class="open-sans-normal">
+  <div class="hero_hero__3YvwP">
+    <div class="hero_content__u5z7n">
+      <h1>
+        BelgiumJS
+      </h1>
+      <p>
+        Belgian javascript development community
+      </p>
+    </div>
+  </div>
+</div>
+`;
