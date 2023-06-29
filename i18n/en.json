@@ -5,5 +5,7 @@
 	"components.sections.header.events": "Events",
 	"components.sections.header.blog": "Blog",
 	"components.blog.blogCard.readMore": "Read more",
-	"app.blog.noPosts": "No posts yet"
+	"app.blog.title": "Blog",
+	"app.blog.noPosts": "No posts yet",
+	"components.layout.blogArticle.backToBlog": "Back to blog"
 }
