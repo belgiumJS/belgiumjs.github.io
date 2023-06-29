@@ -11,6 +11,7 @@ We're a group of developers who are passionate about javascript and like to shar
 
 - Via our [email](mailto:belgiumjs@gmail.com)
 - Via [github](https://github.com/orgs/belgiumJS/discussions) discussions
+- Via [twitter](https://twitter.com/belgiumjs)
 
 ## How can you help us?
 

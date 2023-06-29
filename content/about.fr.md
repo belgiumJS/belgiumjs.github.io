@@ -11,9 +11,12 @@ Nous sommes un groupe de développeurs passionnés par le javascript et qui aimo
 
 - Via notre [email](mailto:belgiumjs@gmail.com)
 - Via [github](https://github.com/orgs/belgiumJS/discussions) grâce aux discussions
+- Via [twitter](https://twitter.com/belgiumjs)
 
 ## Comment nous aider ?
 
 - En participant à nos événements
 - En nous aidant à organiser des événements
 - En nous aidant à trouver des sponsors
+- Nous cherchons des graphistes, designer qui pourraient nous aider dans la communication.
+- We're looking for graphic artists and designers to help us with our communications.
