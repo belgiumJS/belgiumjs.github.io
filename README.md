@@ -8,3 +8,5 @@
 # Website
 
 It's build with [Next.js](https://nextjs.org/).
+
+To understand the codeBase we have an [documentation](./docs/README.md).

@@ -19,6 +19,17 @@ We follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0
 
 We follow the [Conventional Commits](https://www.conventionalcommits.org/en/v1.0.0/) specification, with a slight modification that the type of the commit is not mandatory.
 
+## How to join the website team
+
+You are welcome to join the website team 😄.
+
+1. You need to be a BelgiumJS members. Follow theses steps to become a member: [How to become a member of the community](https://github.com/belgiumJS/admin/blob/main/governance.md#how-to-become-a-member-of-the-community)
+2. Open an issue to ask to join the website team
+3. Wait for the approval of the website team
+4. You will be added to the website team
+
+**Welcome to the team 🥳🎉!**
+
 ## Developer's Certificate of Origin 1.1
 
 ```md
