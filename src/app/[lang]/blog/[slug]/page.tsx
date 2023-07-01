@@ -1,3 +1,4 @@
+import { notFound } from 'next/navigation';
 import Article from '@/components/layout/blogArticle';
 import getContentBySlug, { getAllSlugs } from '@/lib/getcontent';
 import { compileMDX } from 'next-mdx-remote/rsc';
@@ -41,7 +42,7 @@ const Page: FC<blogParams> = ({ params }) => {
 	const rawSource = getContentBySlug(`blog/${params.slug}`, params.lang);
 
 	if (!rawSource) {
-		return <div>404</div>;
+		return notFound();
 	}
 
 	return <Article source={rawSource} />;

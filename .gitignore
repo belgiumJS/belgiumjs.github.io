@@ -37,3 +37,7 @@ next-env.d.ts
 
 # turbo
 .turbo
+
+# sitemap
+/public/sitemap.xml
+/public/robots.txt

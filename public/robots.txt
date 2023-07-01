@@ -1,2 +1,0 @@
-Host: https://belgiumjs.github.io/
-User-agent: *
