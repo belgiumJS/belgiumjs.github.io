@@ -34,6 +34,7 @@ const LanguageSelector = () => {
 				className={styles.languageSwitch}
 				onClick={() => setShowDropdown(!showDropdown)}
 				aria-expanded={showDropdown}
+				aria-label="Language switch"
 			>
 				<MdOutlineTranslate />
 			</button>

@@ -32,7 +32,7 @@ const Header: FC<Props> = ({ className }) => (
 				<LocalizedMessage id="components.sections.header.blog" />
 			</LocalizedLink>
 			<LanguageSelector />
-			<Link href="https://github.com/belgiumJS">
+			<Link href="https://github.com/belgiumJS" title='Github' target='_blank' rel='noopener noreferrer' aria-label='Github'>
 				<FaGithub />
 			</Link>
 		</div>
