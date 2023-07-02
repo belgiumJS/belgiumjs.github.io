@@ -6,15 +6,22 @@ import styles from '@/styles/layout.module.scss';
 import getMessage from '@/lib/getMessage';
 import LocalProvider from '@/providers/localProvider';
 import type { FC, ReactNode } from 'react';
+import type { Metadata } from 'next';
 import '@/styles/global.scss';
 
-const metadata = {
+const metadata: Metadata = {
 	metadataBase: new URL('https://belgiumjs.github.io/'),
 	title: {
 		default: 'BelgiumJS',
 		template: '%s | BelgiumJS',
 	},
 	description: 'Belgian javascript development community',
+	category: 'Open Source',
+	keywords: ['Belgium', 'Belgian', 'javascript', 'community', 'open source'],
+	authors: [{
+		name: 'BelgiumJS',
+		url: 'https://githug.com/belgiumjs',
+	}],
 };
 
 type Props = {
