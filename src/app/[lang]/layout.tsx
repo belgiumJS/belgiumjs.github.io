@@ -8,6 +8,7 @@ import LocalProvider from '@/providers/localProvider';
 import type { FC, ReactNode } from 'react';
 import type { Metadata } from 'next';
 import '@/styles/global.scss';
+import ThemeProviderWrapper from '@/providers/themeProvider';
 
 const metadata: Metadata = {
 	metadataBase: new URL('https://belgiumjs.github.io/'),
@@ -18,10 +19,12 @@ const metadata: Metadata = {
 	description: 'Belgian javascript development community',
 	category: 'Open Source',
 	keywords: ['Belgium', 'Belgian', 'javascript', 'community', 'open source'],
-	authors: [{
-		name: 'BelgiumJS',
-		url: 'https://githug.com/belgiumjs',
-	}],
+	authors: [
+		{
+			name: 'BelgiumJS',
+			url: 'https://githug.com/belgiumjs',
+		},
+	],
 };
 
 type Props = {
@@ -46,11 +49,13 @@ const Layout: FC<Props> = ({ children, params }) => {
 	return (
 		<html lang={params.lang}>
 			<body className={`${font.className} ${styles.layout}`}>
-				<LocalProvider lang={params.lang} messages={messages()}>
-					<Header className={styles.header} />
-					<main className={styles.main}>{children}</main>
-					<Footer className={styles.footer} />
-				</LocalProvider>
+				<ThemeProviderWrapper>
+					<LocalProvider lang={params.lang} messages={messages()}>
+						<Header className={styles.header} />
+						<main className={styles.main}>{children}</main>
+						<Footer className={styles.footer} />
+					</LocalProvider>
+				</ThemeProviderWrapper>
 			</body>
 		</html>
 	);
