@@ -9,7 +9,7 @@ const ThemeSwitcher: FC = () => {
 
 	return (
 		<button
-			aria-label="Toggle Dark Mode"
+			aria-label="Toggle theme"
 			type="button"
 			onClick={() => setTheme(theme === 'dark' ? 'light' : 'dark')}
 			className={styles.themeSwitcher}
